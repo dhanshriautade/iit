@@ -1,0 +1,29 @@
+.cardDesign{
+margin: 3% 8% 8% 8% 
+}
+#containerid{
+    width: 100%;
+    min-height: 100vh;
+    display: -ms-flexbox;
+    align-items: center;
+    /* display: flex;
+    flex-wrap: wrap;  */
+    position: fixed;
+    align-items: center;
+    padding: 15px;
+    
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+   /* background-image: url("/../../assets/Image/login.jpg");
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   bottom: 0;
+   left: 0;
+   overflow: auto;
+   padding: 2rem;
+   position: fixed;
+   right: 0;
+   top: 0; */
+  } 

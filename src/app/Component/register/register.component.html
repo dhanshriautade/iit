@@ -1,0 +1,85 @@
+<div class="Container" id="containerid">
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+  <div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-5" id="chk-block">
+      <mat-card class="mat-card-design" style="height: 7000px;">
+
+        <mat-grid-tile id="mattile1" style="height: 520px;">
+          <form class="example-form" id="formid">
+            <label style="font-weight: 600;margin-left: 65px;    margin-bottom: 0px; color: #000000;">Sign up</label>
+            <br>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="First Name" [formControl]="val_first_name" [(ngModel)]="formdata.first_name"
+                required>
+              <mat-error *ngIf="val_first_name.hasError('required')">
+                First Name
+                <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Last Name" [formControl]="val_last_name" [(ngModel)]="formdata.last_name"
+                required>
+              <mat-error *ngIf="val_last_name.hasError('required')">
+                Last Name
+                <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email id" [formControl]="val_email_id" [(ngModel)]="formdata.email_id"
+                required>
+              <mat-error *ngIf="val_email_id.hasError('required')">
+                Email id
+                <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" [(ngModel)]="formdata.password" name="password"
+                required [formControl]="passwordFormControl">
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+              <mat-error *ngIf="passwordFormControl.hasError('required')">
+                Password is
+                <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Question" [formControl]="val_question" [(ngModel)]="formdata.favourite_question"
+                required>
+                <mat-option value="First pet?">First pet?</mat-option>
+                <mat-option value="First mobile number?">First mobile number?</mat-option>
+                <mat-option value="Nick name?">Nick Name?</mat-option>
+                <mat-option value="Birth city?">Birth city?</mat-option>
+              </mat-select>
+
+              <mat-error *ngIf="val_question.hasError('required')">
+                Select question
+                <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Answar" [formControl]="val_answar" [(ngModel)]="formdata.answar" required>
+              <mat-error *ngIf="val_answar.hasError('required')">
+                Answar is
+                <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <br>
+            <div>
+              <button  mat-raised-button class="Registerbutton" [disabled]="" (click)="Register()">Register</button>
+              <button mat-raised-button class="Loginbutton" (click)="Register()">SignIn</button>
+              <!-- <button  mat-raised-button class="Homebutton" (click)="Register()">Home</button>              -->
+            </div>
+          </form>
+        </mat-grid-tile>
+      </mat-card>
+    </div>
+    <div class="col-2">
+    </div>
+  </div>
+</div>

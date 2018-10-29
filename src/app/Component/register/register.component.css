@@ -1,0 +1,114 @@
+
+mat-grid-tile {
+    width: calc(((100% - 0.5px) * 1) + 0px) !important;
+}
+ #containerid{
+       width: 100%;
+       min-height: 100vh;
+       display: -ms-flexbox;
+       align-items: center;
+       /* display: flex;
+       flex-wrap: wrap;  */
+       position: fixed;
+       align-items: center;
+       padding: 15px;
+       
+       background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+       background-blend-mode: screen;
+      /* background-image: url("/../../assets/Image/login.jpg");
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: 0;
+      left: 0;
+      overflow: auto;
+      padding: 2rem;
+      position: fixed;
+      right: 0;
+      top: 0; */
+     } 
+     
+#mattilea{
+    margin: 70% 0% 0% -47% !important;
+    font-size: 19px;
+    font-weight: 900;
+    color: #0762a8;
+}
+#mattile{
+    margin-top: 0px;
+    height: 420px;
+}
+#matlist{
+    height: 420px;
+    margin: -5% 2% 0% -5%;
+    width: 55%;
+    float: left;
+}
+#formid{
+    margin-top: -14px !important;
+}
+.Loginbutton
+{
+margin:10% 0% 0% 20% !important;
+width: 119px !important;
+background-color: black;
+color: white;
+}
+.Registerbutton
+{
+margin:5% 0% 0% 20% !important;
+width: 119px !important;
+background-color: black;
+color: white;
+}
+.Loginbutton
+{
+     margin:5% 30% 0% 20% !important;
+width: 119px !important;
+background-color: blue;
+color: white;
+}
+.Homebutton
+{
+margin:5% 0% 0% 20% !important;
+width: 119px !important;
+background-color:blue;
+color: white;
+}
+#matlista{
+    margin:-5% 0% 0% 50%;
+    width: 55%;
+    height: 420px;
+}
+.Forgotstyle{
+    /* float: right;
+    margin-right: 30px; */
+    color: #00ccff;
+    margin: 0px 0px 0px 36px;
+}
+#chk-block{
+    margin: 3% 0% 0% -4%;
+    /* margin:5% 0% 0% -7%; */
+    height: 431px;
+
+     /* transition:-webkit-transform .3s,box-shadow .3s,opacity .3s;box-shadow:0 0 0 0 rgba(0,0,0,1.1);
+    -webkit-box-shadow:0 0 0 0 rgba(0, 0, 0, 1);  */
+}
+ /* .shadow-box
+{
+  transition:-webkit-transform .3s,box-shadow .3s,opacity .3s;box-shadow:0 0 0 0 rgba(0,0,0,1.1);
+  -webkit-box-shadow:0 0 0 0 rgba(0, 0, 0, 1);
+
+} 
+#chk-block:hover{
+     -webkit-transform:translateY(-6px);
+    transform:translateY(-6px);
+    box-shadow:0 20px 20px rgba(0,0,0,.1); 
+} */
+ /* .shadow-box:hover
+{
+  -webkit-transform:translateY(-6px);
+  transform:translateY(-6px);
+  box-shadow:0 20px 20px rgba(0,0,0,.1);
+}  */

@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+  /* You can add global styles to this file, and also import other style files */
+  @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+  @import '~bootstrap/dist/css/bootstrap.min.css';
+  /* @import "~bootstrap/dist/css/bootstrap.css"; */
+ /* @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'; */
+
+.swal-modal{
+  border-radius: 33px !important;
+}
+/* .swal-button{
+  margin: 0px 117px 0px -104px !important;
+} */
+.swal-button--confirm{
+  margin: 0px 185px 0px -114px !important;
+ background-color: #006eaf !important;
+ width: 59%;
+}
+.swal-button--danger{
+  background-color: #e64942 !important;
+  margin: 0px 125px 0px 0px !important;
+  /* width:auto; */
+  width: 41%;
+}
+
+/* nav bar style*/
+
+.mat-tab-link-active,
+.mat-tab-label-active {
+  background-color: #5EADB0 !important;
+}
+.mat-checkbox-checked.mat-accent .mat-checkbox-background{
+  
+  background-color: #60b6e8 !important;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+  border-color: #60b6e8 !important;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+  background-color: #60b6e8 !important;
+}

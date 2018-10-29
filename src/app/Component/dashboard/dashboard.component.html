@@ -1,0 +1,33 @@
+<mat-toolbar color="warn">
+  <mat-toolbar-row>
+    <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <div class="div_nav_bar">
+        <ul class="nav">
+  
+          <li id="headernm" style="margin-top: -5%;">{{Name}}</li>
+          <button mat-raised-button color="primary" (click)=signOut() id="headerso">Sign Out</button>
+        </ul>
+      </div>
+    <!-- <button mat-raised-button color="primary" (click)=signOut() id="headerso">Sign Out</button> -->
+
+  </mat-toolbar-row>
+</mat-toolbar>
+<div>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation">
+    <mat-nav-list>
+      <a mat-list-item routerLink='/dashboard/editProfile'>Edit Profile</a>
+      <a mat-list-item routerLink='/dashboard/systemCall'>System Call</a> 
+      <a mat-list-item (click)="onclick('Create')">Create</a> 
+      <a mat-list-item (click)="onclick('Read')">Read</a>
+      <a mat-list-item (click)="onclick('Update')">Update</a>
+      <a mat-list-item (click)="onclick('Delete')">Delete</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</div>

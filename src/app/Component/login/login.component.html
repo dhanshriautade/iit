@@ -1,0 +1,61 @@
+<div class="Container" id="containerid">
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+  <div class="row">
+    <div class="col-4">
+    </div>
+    <!-- <div class="col-5" id="chk-block" style="height: 413px;margin: 98px 0px 0px 33px;"> -->
+        <div class="col-5" id="chk-block">
+      <mat-card class="mat-card-design" style="height: 420px;">
+      
+          <!-- <mat-grid-list cols="2" class="mat-elevation-z14" rowHeight="2:1" id="matlist" style="height: 398px; margin: -25px;
+          width: 55%;"> -->
+          <mat-grid-list cols="2" class="mat-elevation-z14" rowHeight="2:1" id="matlist">
+     <!-- <mat-grid-tile id="mattile" style="height: 550px;    margin: -224px 0px 0px 0px;"> -->
+        <mat-grid-tile id="mattile">
+        <img src="../../../assets/loginlogo.png" style="margin: 0% 0% 0% 3%;">
+      </mat-grid-tile>
+
+      </mat-grid-list>
+      
+      <!-- <mat-grid-list cols="2" class="mat-elevation-z14"  rowHeight="2:1" id="matlista" style="margin: -398px 31px 0px 255px;
+      width: 55%;height: 398px;"> -->
+      <mat-grid-list cols="2" class="mat-elevation-z14"  rowHeight="2:1" id="matlista">
+          <!-- <mat-grid-tile id="mattile1" style="height: 500px;"> -->
+              <mat-grid-tile id="mattile1" style="height: 420px;">
+                  <form class="example-form" id="formid">
+                      <label style="font-weight: 600;margin-left: 16px;color: #000000;">Sign In To Your Account</label>
+                      <br>
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Username" [formControl]="usernameFormControl" [(ngModel)]="loginInput.email_id" required name="username">
+                        <mat-error *ngIf="usernameFormControl.hasError('required')">
+                          Username is
+                          <strong>required</strong>
+                        </mat-error>
+                      </mat-form-field>
+                      <br>
+                      <mat-form-field>
+                        <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" [(ngModel)]="loginInput.password" name="password" required [formControl]="passwordFormControl">
+                        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                        <mat-error *ngIf="passwordFormControl.hasError('required')">
+                            Password is
+                            <strong>required</strong>
+                          </mat-error>
+                      </mat-form-field>
+                      <!-- <br>
+                      <mat-checkbox>Remember me</mat-checkbox>
+                      <br> -->
+                    <div>
+
+                      <button mat-raised-button class="Loginbutton" [disabled]="" (click)="Login()">Login</button>
+                          <br><br>
+                          <!-- <label class="Forgotstyle">Forgot Password ?</label> -->
+                    </div> 
+                  </form>
+          </mat-grid-tile>
+      </mat-grid-list> 
+      </mat-card>
+    </div>
+    <div class="col-2">
+    </div>
+  </div>
+</div>
